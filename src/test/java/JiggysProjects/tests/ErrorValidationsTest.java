@@ -28,7 +28,7 @@ public class ErrorValidationsTest extends BaseTest {
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 		// WebDriverManager.chromedriver().setup();
 		landingPage.loginApplication("jamesmensah@busy.com", "Pa$$wrd");
-		Assert.assertEquals("Incorrect email orf password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 
 	}
 
